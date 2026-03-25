@@ -1,0 +1,161 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9934, 40.7506] },
+      "properties": {
+        "id": "shelter_001",
+        "name": "Court Sq-23 St Station",
+        "address": "23rd St & Jackson Ave, Queens",
+        "type": "subway",
+        "depthLevels": 3,
+        "capacityApprox": 2000,
+        "shieldingFactor": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9857, 40.7484] },
+      "properties": {
+        "id": "shelter_002",
+        "name": "Grand Central Terminal",
+        "address": "89 E 42nd St, New York, NY",
+        "type": "subway",
+        "depthLevels": 4,
+        "capacityApprox": 10000,
+        "shieldingFactor": 0.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9990, 40.7527] },
+      "properties": {
+        "id": "shelter_003",
+        "name": "Times Square Station",
+        "address": "Times Square, Manhattan, NY",
+        "type": "subway",
+        "depthLevels": 5,
+        "capacityApprox": 8000,
+        "shieldingFactor": 0.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.0060, 40.7128] },
+      "properties": {
+        "id": "shelter_004",
+        "name": "Fulton Center Station",
+        "address": "Broadway & Fulton St, Manhattan, NY",
+        "type": "subway",
+        "depthLevels": 4,
+        "capacityApprox": 5000,
+        "shieldingFactor": 0.92
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9772, 40.7614] },
+      "properties": {
+        "id": "shelter_005",
+        "name": "Memorial Sloan Kettering",
+        "address": "1275 York Ave, New York, NY",
+        "type": "hospital",
+        "depthLevels": 2,
+        "capacityApprox": 1500,
+        "shieldingFactor": 0.85
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9442, 40.6782] },
+      "properties": {
+        "id": "shelter_006",
+        "name": "Kings County Hospital",
+        "address": "451 Clarkson Ave, Brooklyn, NY",
+        "type": "hospital",
+        "depthLevels": 2,
+        "capacityApprox": 2000,
+        "shieldingFactor": 0.85
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9712, 40.7500] },
+      "properties": {
+        "id": "shelter_007",
+        "name": "Essex Crossing Parking",
+        "address": "115 Delancey St, Manhattan, NY",
+        "type": "parking",
+        "depthLevels": 3,
+        "capacityApprox": 600,
+        "shieldingFactor": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.0121, 40.7056] },
+      "properties": {
+        "id": "shelter_008",
+        "name": "Battery Park City Garage",
+        "address": "400 Chambers St, Manhattan, NY",
+        "type": "parking",
+        "depthLevels": 3,
+        "capacityApprox": 800,
+        "shieldingFactor": 0.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9654, 40.7832] },
+      "properties": {
+        "id": "shelter_009",
+        "name": "Cathedral Pkwy Station",
+        "address": "110th St & Central Park West, Manhattan",
+        "type": "subway",
+        "depthLevels": 3,
+        "capacityApprox": 1500,
+        "shieldingFactor": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9501, 40.6501] },
+      "properties": {
+        "id": "shelter_010",
+        "name": "Flatbush Reinforced Basement",
+        "address": "2121 Flatbush Ave, Brooklyn, NY",
+        "type": "building",
+        "depthLevels": 2,
+        "capacityApprox": 400,
+        "shieldingFactor": 0.75
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.8400, 40.7282] },
+      "properties": {
+        "id": "shelter_011",
+        "name": "Jamaica Center Station",
+        "address": "Jamaica Center, Jamaica, Queens",
+        "type": "subway",
+        "depthLevels": 2,
+        "capacityApprox": 2000,
+        "shieldingFactor": 0.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.1502, 40.5795] },
+      "properties": {
+        "id": "shelter_012",
+        "name": "Staten Island University Hospital",
+        "address": "475 Seaview Ave, Staten Island, NY",
+        "type": "hospital",
+        "depthLevels": 2,
+        "capacityApprox": 1200,
+        "shieldingFactor": 0.83
+      }
+    }
+  ]
+}

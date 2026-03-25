@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <title>Nuclear Force — The Golden Hour Router</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script type="module" crossorigin src="/assets/index-BF9yt88G.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CEEPsHsX.css">
+</head>
+<body>
+  <div id="app">
+    <nav id="navbar">
+      <div id="brand">
+        <span id="logo">&#9762; Nuclear Force</span>
+        <span id="subtitle">NYC Emergency Router</span>
+      </div>
+
+      <div id="yield-group">
+        <span class="yield-label">Yield:</span>
+        <button class="yield-btn" data-yield="dirty-bomb">Dirty Bomb</button>
+        <button class="yield-btn active" data-yield="10kt">10 Kiloton</button>
+        <button class="yield-btn" data-yield="100kt">100 Kiloton</button>
+        <button class="yield-btn" data-yield="1mt">1 Megaton</button>
+      </div>
+
+      <div id="location-group">
+        <input type="text" id="address-input" placeholder="Enter your address..." autocomplete="off" />
+        <button id="gps-btn" title="Use my GPS location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+          </svg>
+        </button>
+      </div>
+
+      <button id="place-blast-btn">Place Blast</button>
+      <button id="analyze-btn">Analyze</button>
+    </nav>
+
+    <div id="main">
+      <div id="map-container">
+        <div id="map"></div>
+
+        <div id="how-to-card">
+          <div class="how-to-title">How to use Nuclear Force</div>
+          <ol>
+            <li>Click <strong>Place Blast</strong> to mark where the bomb drops</li>
+            <li>Enter your address or click the GPS button</li>
+            <li>Hit <strong>Analyze</strong> to see your escape route</li>
+          </ol>
+          <div class="how-to-hint">Try: Times Square, Wall Street, 10001</div>
+        </div>
+
+        <div id="map-legend">
+          <div class="legend-title">Legend</div>
+          <div class="legend-section">
+            <div class="legend-item"><span class="legend-swatch" style="background:#E74C3C"></span>Fireball Zone</div>
+            <div class="legend-item"><span class="legend-swatch" style="background:#E67E22"></span>Heavy Blast Zone</div>
+            <div class="legend-item"><span class="legend-swatch" style="background:#F1C40F"></span>Light Blast Zone</div>
+          </div>
+          <div class="legend-section">
+            <div class="legend-item"><span class="legend-line purple-dash"></span>Fallout Drift</div>
+            <div class="legend-item"><span class="legend-line cyan-solid"></span>Escape Route</div>
+            <div class="legend-item"><span class="legend-line blue-dash"></span>Walk to Shelter</div>
+          </div>
+          <div class="legend-section">
+            <div class="legend-item"><span class="legend-dot blue-dot"></span>Your Location</div>
+          </div>
+        </div>
+
+        <div id="blast-banner" class="hidden">Blast center set — now enter your location and hit Analyze</div>
+        <div id="gps-banner" class="hidden">Acquiring GPS...</div>
+      </div>
+
+      <div id="sidebar">
+        <div id="sidebar-alert">
+          <div id="alert-title">FIND SHELTER OR EVACUATE</div>
+          <div id="alert-sub">Run the analysis to see your options.</div>
+        </div>
+
+        <div id="tab-bar">
+          <button class="tab-btn active" data-tab="shelter">Find Shelter</button>
+          <button class="tab-btn" data-tab="threat">Threat</button>
+          <button class="tab-btn" data-tab="evacuate">Evacuate</button>
+        </div>
+
+        <div id="tab-shelter" class="tab-content active">
+          <div id="shelter-card" class="hidden">
+            <div id="shelter-type-badge"></div>
+            <div id="shelter-name"></div>
+            <div id="shelter-address"></div>
+            <div id="shelter-stats">
+              <div class="stat-chip"><div class="stat-val" id="stat-distance">—</div><div class="stat-label">meters</div></div>
+              <div class="stat-chip"><div class="stat-val" id="stat-walk">—</div><div class="stat-label">min walk</div></div>
+              <div class="stat-chip"><div class="stat-val" id="stat-depth">—</div><div class="stat-label">lvls UG</div></div>
+            </div>
+            <div id="shelter-capacity"></div>
+          </div>
+          <div id="directions-container" class="hidden">
+            <div class="directions-title">Walking Directions</div>
+            <ol id="directions-list"></ol>
+          </div>
+          <div id="shelter-placeholder">
+            <p>Run Analyze to find the nearest shelter.</p>
+          </div>
+        </div>
+
+        <div id="tab-threat" class="tab-content">
+          <div id="threat-content">
+            <div class="threat-placeholder">Run Analyze to see blast zone data.</div>
+          </div>
+        </div>
+
+        <div id="tab-evacuate" class="tab-content">
+          <div id="evacuate-content">
+            <div class="evacuate-placeholder">Run Analyze to see evacuation route.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
