@@ -8,6 +8,7 @@ import { drawWalkRoute, updateShelterCard } from './routing';
 import { renderWalkingDirections } from './directions';
 import { drawEvacRoute, renderEvacTab } from './evacuate';
 import { initSidebar, openSidebar, updateAlertBanner } from './sidebar';
+import { initDisclaimerModal } from './disclaimer';
 import * as turf from '@turf/turf';
 import { BlastConfig, UserPosition, YieldPreset } from './types';
 
@@ -27,6 +28,7 @@ let analysisLayers: L.Layer[] = [];
 let shelterMarkers: L.LayerGroup | null = null;
 
 // ─── Init ─────────────────────────────────────────────────────────────
+initDisclaimerModal();
 map = initMap('map');
 initSidebar();
 
